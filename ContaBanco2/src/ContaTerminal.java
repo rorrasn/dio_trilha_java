@@ -7,7 +7,7 @@ public class ContaTerminal {
 
 Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Hello, World!");
+       
 
         System.out.println("Por favor, Digite seu nome");
         String nome = scanner.next();

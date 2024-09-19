@@ -1,1 +1,62 @@
+    public interface ReprodutorMusical {
+	    public void tocar(){
+      }
+	    public void pausar(){
+      }
+	    public void selecionarMusica(String musica){
+      }
+  }
 
+    public interface AparelhoTelefonico {
+      public void atender(){
+      }
+	    public void iniciarCorreioVoz(){
+      }
+	    public void ligar(String numero){
+      }
+    }
+
+    public interface NavegadorInternet {
+      public void adicionarNovaAba(){
+      }
+	    public void atualizarPagina(){
+      }
+	    public void exibirPagina(String url){
+      }
+    }
+
+    public class IPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet{
+
+    	public void tocar();
+	    public void pausar();
+	    public void selecionarMusica(String musica);
+        
+      public void atender();
+    	public void iniciarCorreioVoz();
+	    public void ligar(String numero);
+        
+      public void adicionarNovaAba();
+	    public void atualizarPagina();
+	    public void exibirPagina(String url);
+        }
+
+  public class Usuario{
+    public static void main (String[] args){
+      IPhone ip = new IPhone;
+
+      ReprodutorMusical reprodutor = ip;
+      AparelhoTelefonico telefone = ip;
+      NavegadorInternet navegador = ip;
+
+      reprodutor.tocar()
+	    reprodutor.pausar()
+      reprodutor.selecionarMusica(String musica)
+
+      telefone.atender()
+	    telefone.iniciarCorreioVoz()
+      telefone.ligar(String numero)
+
+      Navegador.adicionarNovaAba()
+	    Navegador.atualizarPagina()
+      Navegador.exibirPagina(String url)
+}}
